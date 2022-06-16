@@ -1,10 +1,19 @@
+import { Canvas } from "@react-three/fiber";
 import styled from "styled-components";
+import { OrbitControls } from "@react-three/drei";
+import Box from "./components/Box";
 
 function App() {
   return (
     <>
       <Wrapper>
         <h1>Hello World</h1>
+        <Canvas className="canvas">
+          <OrbitControls />
+          <ambientLight intensity={0.5} />
+          <directionalLight position={[-2, 5, 2]} intensity={1} />
+          <Box />
+        </Canvas>
       </Wrapper>
     </>
   );
