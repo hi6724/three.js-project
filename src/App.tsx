@@ -21,8 +21,9 @@ function App() {
         <Canvas className="canvas" shadows>
           {/* <Three /> */}
 
-          {/* <ThreePoints /> */}
-          <NewThree />
+          <ThreePoints />
+          {/* <NewThree /> */}
+
           {/* <ThreeComponent /> */}
           {/* <PerspectiveCamera ref={cameraRef} position={[2, 2, 2]} />
           <OrbitControls camera={cameraRef.current} />
